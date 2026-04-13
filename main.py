@@ -103,6 +103,7 @@ def do_dns_one():
 def main():
     if sys.version_info < (3, 11):
         input('Please use python 3.11 or higher')
+        return
     t1 = threading.Thread(target=do_http_one)
     t2 = threading.Thread(target=do_dns_one)
     
